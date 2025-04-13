@@ -1,3 +1,4 @@
+
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 
@@ -24,7 +25,12 @@ export const ExpertiseSection = () => {
               <CardTitle>AI & Machine Learning</CardTitle>
             </CardHeader>
             <CardContent>
-              <p>
+              <img
+                src="https://picsum.photos/400/200?random=2"
+                alt="AI & Machine Learning"
+                className="rounded-md mb-4"
+              />
+              <p className="mb-2">
                 Developing trustworthy, explainable AI solutions tailored to
                 your business needs.
               </p>
@@ -42,7 +48,12 @@ export const ExpertiseSection = () => {
               <CardTitle>Hardware & IoT Development</CardTitle>
             </CardHeader>
             <CardContent>
-              <p>
+              <img
+                src="https://picsum.photos/400/200?random=3"
+                alt="Hardware & IoT Development"
+                className="rounded-md mb-4"
+              />
+              <p className="mb-2">
                 Designing and building secure, connected hardware from
                 prototype to production.
               </p>
@@ -60,7 +71,12 @@ export const ExpertiseSection = () => {
               <CardTitle>Connected Products & Systems</CardTitle>
             </CardHeader>
             <CardContent>
-              <p>
+              <img
+                src="https://picsum.photos/400/200?random=4"
+                alt="Connected Products & Systems"
+                className="rounded-md mb-4"
+              />
+              <p className="mb-2">
                 Integrating software, hardware, and connectivity for seamless
                 user experiences.
               </p>
@@ -78,7 +94,12 @@ export const ExpertiseSection = () => {
               <CardTitle>Strategy & Digital Transformation</CardTitle>
             </CardHeader>
             <CardContent>
-              <p>
+              <img
+                src="https://picsum.photos/400/200?random=1"
+                alt="Strategy & Digital Transformation"
+                className="rounded-md mb-4"
+              />
+              <p className="mb-2">
                 Guiding your organization through complex technological shifts
                 and opportunities.
               </p>
@@ -106,3 +127,4 @@ export const ExpertiseSection = () => {
     </section>
   );
 };
+

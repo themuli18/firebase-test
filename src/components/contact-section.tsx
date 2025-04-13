@@ -8,7 +8,14 @@ export const ContactSection = () => {
     <section className="py-12">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-semibold mb-6">Contact Us</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+          <div>
+            <img
+              src="https://picsum.photos/600/400?random=5"
+              alt="Contact RMBG"
+              className="rounded-lg shadow-md mb-4 md:mb-0"
+            />
+          </div>
           <div>
             <p className="mb-4">
               We'd love to hear from you! Reach out to us directly, and we'll
@@ -27,6 +34,8 @@ export const ContactSection = () => {
               <Button>Submit Message</Button>
             </form>
           </div>
+        </div>
+        <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-6">
           <div>
             <h3 className="text-xl font-semibold mb-4">Where to find us</h3>
             <p>Valschermkade 16</p>
@@ -34,6 +43,8 @@ export const ContactSection = () => {
             <p className="mt-4">
               <a href="mailto:info@rmbg.nl">info@rmbg.nl</a>
             </p>
+          </div>
+          <div>
           </div>
         </div>
       </div>
@@ -45,3 +56,4 @@ export const ContactSection = () => {
     </section>
   );
 };
+
