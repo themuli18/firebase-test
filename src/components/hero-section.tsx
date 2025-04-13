@@ -4,7 +4,7 @@ export const HeroSection = () => {
   return (
     <section className="py-24 bg-primary text-primary-foreground relative overflow-hidden">
       <div
-        className="absolute inset-0 bg-[url('https://source.unsplash.com/1200x800?office')] bg-cover bg-center opacity-30"
+        className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1618424154270-47995a6e3819?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&quot')] bg-cover bg-center opacity-30"
         style={{ filter: 'blur(5px)' }}
       ></div>
       <div className="container mx-auto px-4 text-center relative z-10">
@@ -17,5 +17,3 @@ export const HeroSection = () => {
     </section>
   );
 };
-
-
