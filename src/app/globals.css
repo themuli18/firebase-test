@@ -1,4 +1,4 @@
-@tailwind base;
+
 @tailwind components;
 @tailwind utilities;
 
@@ -118,3 +118,5 @@ body {
 .no-scrollbar {
   scrollbar-width: none;
 }
+
+

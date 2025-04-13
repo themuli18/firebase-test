@@ -57,3 +57,4 @@ export const AboutSection = () => {
     </section>
   );
 };
+

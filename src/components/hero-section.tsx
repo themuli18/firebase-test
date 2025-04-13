@@ -9,8 +9,19 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import Link from "next/link";
+import { useEffect, useState } from "react";
 
 export const HeroSection = () => {
+  const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
+
+  if (!isMounted) {
+    return null;
+  }
+
   return (
     <section className="py-24 relative overflow-hidden">
       <div
@@ -38,3 +49,4 @@ export const HeroSection = () => {
     </section>
   );
 };
+

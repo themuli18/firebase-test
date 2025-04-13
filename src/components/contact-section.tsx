@@ -60,3 +60,4 @@ export const ContactSection = () => {
     </section>
   );
 };
+

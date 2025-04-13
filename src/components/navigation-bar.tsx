@@ -12,9 +12,19 @@ import {
 import { Button } from "@/components/ui/button";
 import { Menu } from "lucide-react";
 import { usePathname } from 'next/navigation';
+import { useEffect, useState } from "react";
 
 const NavigationBar = () => {
   const pathname = usePathname();
+  const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
+
+  if (!isMounted) {
+    return null;
+  }
 
   return (
     <nav className="bg-background py-4 shadow-md sticky top-0 z-50">
@@ -74,3 +84,4 @@ const NavigationBar = () => {
 };
 
 export { NavigationBar };
+
