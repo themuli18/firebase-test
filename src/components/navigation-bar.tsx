@@ -14,7 +14,7 @@ const NavigationBar = () => {
           <Link href="/#expertise" className="hover:text-accent">
             Expertise
           </Link>
-          <Link href="/#consultation" className="hover:text-accent">
+          <Link href="/#ai-consultation" className="hover:text-accent">
             Get Started
           </Link>
           <Link href="/#contact" className="hover:text-accent">
