@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export const HeroSection = () => {
   return (
@@ -12,7 +13,9 @@ export const HeroSection = () => {
         <p className="text-lg mb-8">
           We are a boutique consulting firm helping companies turn ideas into scalable, secure, and future-proof solutions.
         </p>
-        <Button size="lg">Get Started</Button>
+        <Link href="/#ai-consultation">
+          <Button size="lg">Get Started</Button>
+        </Link>
       </div>
     </section>
   );

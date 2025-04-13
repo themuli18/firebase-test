@@ -10,10 +10,18 @@ export default function Home() {
   return (
     <>
       <HeroSection />
-      <AboutSection />
-      <ExpertiseSection />
-      <AIConsultationSection />
-      <ContactSection />
+      <section id="about">
+        <AboutSection />
+      </section>
+      <section id="expertise">
+        <ExpertiseSection />
+      </section>
+      <section id="ai-consultation">
+        <AIConsultationSection />
+      </section>
+      <section id="contact">
+        <ContactSection />
+      </section>
     </>
   );
 }
