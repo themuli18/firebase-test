@@ -45,6 +45,19 @@ body {
     --sidebar-accent-foreground: 240 5.9% 10%;
     --sidebar-border: 220 13% 91%;
     --sidebar-ring: 217.2 91.2% 59.8%;
+
+    --rmbg-deep-blue: 210 66.7% 20%;
+    --rmbg-light-gray: 0 0% 94.1%;
+    --rmbg-teal: 180 100% 25.1%;
+
+    --background: hsl(var(--rmbg-light-gray));
+    --foreground: hsl(var(--rmbg-deep-blue));
+    --primary: hsl(var(--rmbg-deep-blue));
+    --primary-foreground: hsl(var(--rmbg-light-gray));
+    --secondary: hsl(var(--rmbg-light-gray));
+    --secondary-foreground: hsl(var(--rmbg-deep-blue));
+    --accent: hsl(var(--rmbg-teal));
+    --accent-foreground: hsl(var(--rmbg-light-gray));
   }
 
   .dark {
@@ -86,4 +99,5 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
 

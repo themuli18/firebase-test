@@ -1,4 +1,5 @@
 
+
 import { AboutSection } from "@/components/about-section";
 import { ContactSection } from "@/components/contact-section";
 import { ExpertiseSection } from "@/components/expertise-section";
@@ -16,3 +17,4 @@ export default function Home() {
     </>
   );
 }
+
