@@ -1,6 +1,8 @@
+"use client";
 
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
+import {Card, CardContent, CardDescription, CardHeader, CardTitle} from "@/components/ui/card";
+import {Button} from "@/components/ui/button";
+import Link from "next/link";
 
 export const ExpertiseSection = () => {
   return (
@@ -23,17 +25,17 @@ export const ExpertiseSection = () => {
           <Card>
             <CardHeader>
               <CardTitle>AI & Machine Learning</CardTitle>
+              <CardDescription>
+                Developing trustworthy, explainable AI solutions tailored to
+                your business needs.
+              </CardDescription>
             </CardHeader>
             <CardContent>
               <img
-                src="https://picsum.photos/400/200?random=2"
+                src="https://images.unsplash.com/photo-1550345332-09e3ac987658?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8"
                 alt="AI & Machine Learning"
                 className="rounded-md mb-4"
               />
-              <p className="mb-2">
-                Developing trustworthy, explainable AI solutions tailored to
-                your business needs.
-              </p>
               <ul className="list-disc pl-5 mt-2">
                 <li>Machine learning model development</li>
                 <li>Explainable AI implementation</li>
@@ -46,17 +48,17 @@ export const ExpertiseSection = () => {
           <Card>
             <CardHeader>
               <CardTitle>Hardware & IoT Development</CardTitle>
+              <CardDescription>
+                Designing and building secure, connected hardware from
+                prototype to production.
+              </CardDescription>
             </CardHeader>
             <CardContent>
               <img
-                src="https://picsum.photos/400/200?random=3"
+                src="https://images.unsplash.com/photo-1550345332-09e3ac987658?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8"
                 alt="Hardware & IoT Development"
                 className="rounded-md mb-4"
               />
-              <p className="mb-2">
-                Designing and building secure, connected hardware from
-                prototype to production.
-              </p>
               <ul className="list-disc pl-5 mt-2">
                 <li>IoT device prototyping</li>
                 <li>Embedded systems design</li>
@@ -69,17 +71,17 @@ export const ExpertiseSection = () => {
           <Card>
             <CardHeader>
               <CardTitle>Connected Products & Systems</CardTitle>
+              <CardDescription>
+                Integrating software, hardware, and connectivity for seamless
+                user experiences.
+              </CardDescription>
             </CardHeader>
             <CardContent>
               <img
-                src="https://picsum.photos/400/200?random=4"
+                src="https://images.unsplash.com/photo-1550345332-09e3ac987658?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8"
                 alt="Connected Products & Systems"
                 className="rounded-md mb-4"
               />
-              <p className="mb-2">
-                Integrating software, hardware, and connectivity for seamless
-                user experiences.
-              </p>
               <ul className="list-disc pl-5 mt-2">
                 <li>Cloud-connected device development</li>
                 <li>Mobile app integration</li>
@@ -92,17 +94,17 @@ export const ExpertiseSection = () => {
           <Card>
             <CardHeader>
               <CardTitle>Strategy & Digital Transformation</CardTitle>
+              <CardDescription>
+                Guiding your organization through complex technological shifts
+                and opportunities.
+              </CardDescription>
             </CardHeader>
             <CardContent>
               <img
-                src="https://picsum.photos/400/200?random=1"
+                src="https://images.unsplash.com/photo-1550345332-09e3ac987658?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8"
                 alt="Strategy & Digital Transformation"
                 className="rounded-md mb-4"
               />
-              <p className="mb-2">
-                Guiding your organization through complex technological shifts
-                and opportunities.
-              </p>
               <ul className="list-disc pl-5 mt-2">
                 <li>Digital maturity assessment</li>
                 <li>Technology roadmap development</li>
@@ -121,10 +123,11 @@ export const ExpertiseSection = () => {
             Let's discuss how our expertise can accelerate your innovation
             journey. Schedule a consultation today.
           </p>
-          <Button size="lg">Get Started</Button>
+          <Link href="/#ai-consultation">
+            <Button size="lg">Get Started</Button>
+          </Link>
         </div>
       </div>
     </section>
   );
 };
-

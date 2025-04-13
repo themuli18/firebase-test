@@ -1,7 +1,8 @@
+"use client";
 
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
+import {Button} from "@/components/ui/button";
+import {Input} from "@/components/ui/input";
+import {Textarea} from "@/components/ui/textarea";
 
 export const ContactSection = () => {
   return (
@@ -11,7 +12,7 @@ export const ContactSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
           <div>
             <img
-              src="https://picsum.photos/600/400?random=5"
+              src="https://images.unsplash.com/photo-1550345332-09e3ac987658?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8"
               alt="Contact RMBG"
               className="rounded-lg shadow-md mb-4 md:mb-0"
             />
@@ -23,13 +24,13 @@ export const ContactSection = () => {
             </p>
             <form className="space-y-4">
               <div>
-                <Input type="text" placeholder="Your Name" />
+                <Input type="text" placeholder="Your Name"/>
               </div>
               <div>
-                <Input type="email" placeholder="Your Email" />
+                <Input type="email" placeholder="Your Email"/>
               </div>
               <div>
-                <Textarea placeholder="Your Message" />
+                <Textarea placeholder="Your Message"/>
               </div>
               <Button>Submit Message</Button>
             </form>
@@ -48,12 +49,6 @@ export const ContactSection = () => {
           </div>
         </div>
       </div>
-      <footer className="bg-secondary py-6 mt-12">
-        <div className="container mx-auto px-4 text-center">
-          <p>© 2025 RMBG. All rights reserved. | Privacy Policy</p>
-        </div>
-      </footer>
     </section>
   );
 };
-

@@ -1,3 +1,8 @@
+"use client";
+
+import {Card, CardContent, CardDescription, CardHeader, CardTitle} from "@/components/ui/card";
+import {Avatar, AvatarFallback, AvatarImage} from "@/components/ui/avatar";
+import {Button} from "@/components/ui/button";
 
 export const AboutSection = () => {
   return (
@@ -37,7 +42,7 @@ export const AboutSection = () => {
         </div>
         <div>
           <img
-            src="https://picsum.photos/600/400?random=1"
+            src="https://images.unsplash.com/photo-1550345332-09e3ac987658?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8"
             alt="About RMBG"
             className="rounded-lg shadow-md"
           />
@@ -46,4 +51,3 @@ export const AboutSection = () => {
     </section>
   );
 };
-
