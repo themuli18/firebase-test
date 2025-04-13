@@ -54,14 +54,19 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} min-h-screen bg-background font-sans antialiased bg-grid`}
       >
-        <NavigationBar />
-        {children}
-        <Footer />
-        <Toaster />
+        <div className="relative flex min-h-screen flex-col">
+          <NavigationBar />
+          <main className="flex-1 relative">
+            <div className="absolute inset-0 bg-gradient-to-b from-background via-background/80 to-background pointer-events-none" />
+            {children}
+          </main>
+          <Footer />
+          <Toaster />
+        </div>
       </body>
     </html>
   );

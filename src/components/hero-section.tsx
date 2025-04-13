@@ -29,19 +29,24 @@ export const HeroSection = () => {
         style={{ filter: "blur(5px)" }}
       ></div>
       <div className="container mx-auto px-4 text-center relative z-10">
-        <Card className="max-w-3xl mx-auto bg-background border-primary shadow-lg transition-all duration-500 ease-in-out transform hover:scale-105">
+        <Card className="max-w-3xl mx-auto glass-effect border-primary/20 shadow-lg transition-all duration-500 ease-in-out transform hover:scale-105">
           <CardHeader>
-            <CardTitle className="text-3xl font-bold transition-opacity duration-500">
+            <CardTitle className="text-4xl md:text-5xl font-bold transition-opacity duration-500 text-gradient">
               From Vision to Global Impact
             </CardTitle>
-            <CardDescription className="text-muted-foreground text-lg transition-opacity duration-500 delay-200">
+            <CardDescription className="text-muted-foreground text-lg md:text-xl transition-opacity duration-500 delay-200 mt-4">
               We are a boutique consulting firm helping companies turn ideas into
               scalable, secure, and future-proof solutions.
             </CardDescription>
           </CardHeader>
-          <CardContent>
+          <CardContent className="mt-6">
             <Link href="/#ai-consultation">
-              <Button size="lg">Get Started</Button>
+              <Button 
+                size="lg" 
+                className="btn-primary text-lg px-8 py-6 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
+              >
+                Get Started
+              </Button>
             </Link>
           </CardContent>
         </Card>
