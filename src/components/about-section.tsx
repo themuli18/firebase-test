@@ -1,12 +1,12 @@
 "use client";
 
-import {Card, CardContent, CardDescription, CardHeader, CardTitle} from "@/components/ui/card";
-import {Avatar, AvatarFallback, AvatarImage} from "@/components/ui/avatar";
-import {Button} from "@/components/ui/button";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { Button } from "@/components/ui/button";
 
 export const AboutSection = () => {
   return (
-    <section className="py-12 bg-secondary">
+    <section className="py-12">
       <div className="container mx-auto px-4 grid md:grid-cols-2 gap-8 items-center">
         <div>
           <h2 className="text-3xl font-semibold mb-6">About Us</h2>
@@ -35,10 +35,16 @@ export const AboutSection = () => {
               real."
             </em>
           </p>
-          <p className="mt-2">
-            <strong>Aike Müller</strong>
-          </p>
-          <p>Founder and CEO</p>
+          <div className="flex items-center mt-4">
+            <Avatar className="mr-4">
+              <AvatarImage src="https://picsum.photos/id/222/50/50" alt="Aike Müller" />
+              <AvatarFallback>AM</AvatarFallback>
+            </Avatar>
+            <div>
+              <p className="font-semibold">Aike Müller</p>
+              <p className="text-sm">Founder and CEO</p>
+            </div>
+          </div>
         </div>
         <div>
           <img

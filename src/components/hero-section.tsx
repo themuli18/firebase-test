@@ -9,6 +9,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 export const HeroSection = () => {
   return (
@@ -18,22 +19,43 @@ export const HeroSection = () => {
         style={{ filter: "blur(5px)" }}
       ></div>
       <div className="container mx-auto px-4 text-center relative z-10">
-        <Card className="max-w-3xl mx-auto bg-background border-primary shadow-lg">
+        <motion.Card
+          className="max-w-3xl mx-auto bg-background border-primary shadow-lg"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+        >
           <CardHeader>
-            <CardTitle className="text-3xl font-bold">
+            <motion.CardTitle
+              className="text-3xl font-bold"
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+            >
               From Vision to Global Impact
-            </CardTitle>
-            <CardDescription className="text-muted-foreground text-lg">
+            </motion.CardTitle>
+            <motion.CardDescription
+              className="text-muted-foreground text-lg"
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.4 }}
+            >
               We are a boutique consulting firm helping companies turn ideas into
               scalable, secure, and future-proof solutions.
-            </CardDescription>
+            </motion.CardDescription>
           </CardHeader>
           <CardContent>
             <Link href="/#ai-consultation">
-              <Button size="lg">Get Started</Button>
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 0.5, delay: 0.6 }}
+              >
+                <Button size="lg">Get Started</Button>
+              </motion.div>
             </Link>
           </CardContent>
-        </Card>
+        </motion.Card>
       </div>
     </section>
   );

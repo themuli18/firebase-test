@@ -3,6 +3,7 @@
 import {Button} from "@/components/ui/button";
 import {Input} from "@/components/ui/input";
 import {Textarea} from "@/components/ui/textarea";
+import {Label} from "@/components/ui/label";
 
 export const ContactSection = () => {
   return (
@@ -24,13 +25,16 @@ export const ContactSection = () => {
             </p>
             <form className="space-y-4">
               <div>
-                <Input type="text" placeholder="Your Name"/>
+                <Label htmlFor="name">Your Name</Label>
+                <Input type="text" id="name" placeholder="Your Name"/>
               </div>
               <div>
-                <Input type="email" placeholder="Your Email"/>
+                <Label htmlFor="email">Your Email</Label>
+                <Input type="email" id="email" placeholder="Your Email"/>
               </div>
               <div>
-                <Textarea placeholder="Your Message"/>
+                <Label htmlFor="message">Your Message</Label>
+                <Textarea id="message" placeholder="Your Message"/>
               </div>
               <Button>Submit Message</Button>
             </form>
@@ -46,6 +50,10 @@ export const ContactSection = () => {
             </p>
           </div>
           <div>
+            <h3 className="text-xl font-semibold mb-4">Connect</h3>
+            <p>
+              <a href="mailto:info@rmbg.nl">info@rmbg.nl</a>
+            </p>
           </div>
         </div>
       </div>

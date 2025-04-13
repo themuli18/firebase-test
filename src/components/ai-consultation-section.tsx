@@ -1,4 +1,3 @@
-
 "use client";
 import {Button} from "@/components/ui/button";
 import {Textarea} from "@/components/ui/textarea";
@@ -58,7 +57,7 @@ export const AIConsultationSection = () => {
             {isLoading ? "Consulting..." : "Get Initial Consultation"}
           </Button>
           {strategicInsights && potentialSolutions && (
-            <div className="mt-6">
+            <div className="mt-6 p-4 rounded-md shadow-md bg-muted">
               <h3 className="text-xl font-semibold mb-2">Strategic Insights:</h3>
               <p className="mb-4">{strategicInsights}</p>
               <h3 className="text-xl font-semibold mb-2">Potential Solutions:</h3>

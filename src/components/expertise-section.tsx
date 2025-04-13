@@ -30,11 +30,11 @@ export const ExpertiseSection = () => {
                 your business needs.
               </CardDescription>
             </CardHeader>
-            <CardContent>
+            <CardContent className="flex flex-col">
               <img
-                src="https://images.unsplash.com/photo-1550345332-09e3ac987658?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8"
+                src="https://images.unsplash.com/photo-1519389950473-47a0f98185c3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8"
                 alt="AI & Machine Learning"
-                className="rounded-md mb-4"
+                className="rounded-md mb-4 h-48 object-cover"
               />
               <ul className="list-disc pl-5 mt-2">
                 <li>Machine learning model development</li>
@@ -53,11 +53,11 @@ export const ExpertiseSection = () => {
                 prototype to production.
               </CardDescription>
             </CardHeader>
-            <CardContent>
+            <CardContent className="flex flex-col">
               <img
-                src="https://images.unsplash.com/photo-1550345332-09e3ac987658?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8"
+                src="https://images.unsplash.com/photo-1518770660439-464c4c52ef3c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8"
                 alt="Hardware & IoT Development"
-                className="rounded-md mb-4"
+                className="rounded-md mb-4 h-48 object-cover"
               />
               <ul className="list-disc pl-5 mt-2">
                 <li>IoT device prototyping</li>
@@ -76,11 +76,11 @@ export const ExpertiseSection = () => {
                 user experiences.
               </CardDescription>
             </CardHeader>
-            <CardContent>
+            <CardContent className="flex flex-col">
               <img
-                src="https://images.unsplash.com/photo-1550345332-09e3ac987658?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8"
+                src="https://images.unsplash.com/photo-1560525796-e46e6103fa45?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8"
                 alt="Connected Products & Systems"
-                className="rounded-md mb-4"
+                className="rounded-md mb-4 h-48 object-cover"
               />
               <ul className="list-disc pl-5 mt-2">
                 <li>Cloud-connected device development</li>
@@ -99,11 +99,11 @@ export const ExpertiseSection = () => {
                 and opportunities.
               </CardDescription>
             </CardHeader>
-            <CardContent>
+            <CardContent className="flex flex-col">
               <img
-                src="https://images.unsplash.com/photo-1550345332-09e3ac987658?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8"
+                src="https://images.unsplash.com/photo-1542744166-e342ae66ab9f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8"
                 alt="Strategy & Digital Transformation"
-                className="rounded-md mb-4"
+                className="rounded-md mb-4 h-48 object-cover"
               />
               <ul className="list-disc pl-5 mt-2">
                 <li>Digital maturity assessment</li>
