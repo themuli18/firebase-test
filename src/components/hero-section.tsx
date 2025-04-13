@@ -9,7 +9,6 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import Link from "next/link";
-import { motion } from "framer-motion";
 
 export const HeroSection = () => {
   return (
@@ -19,43 +18,22 @@ export const HeroSection = () => {
         style={{ filter: "blur(5px)" }}
       ></div>
       <div className="container mx-auto px-4 text-center relative z-10">
-        <motion.Card
-          className="max-w-3xl mx-auto bg-background border-primary shadow-lg"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-        >
+        <Card className="max-w-3xl mx-auto bg-background border-primary shadow-lg transition-all duration-500 ease-in-out transform hover:scale-105">
           <CardHeader>
-            <motion.CardTitle
-              className="text-3xl font-bold"
-              initial={{ opacity: 0, y: 10 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.2 }}
-            >
+            <CardTitle className="text-3xl font-bold transition-opacity duration-500">
               From Vision to Global Impact
-            </motion.CardTitle>
-            <motion.CardDescription
-              className="text-muted-foreground text-lg"
-              initial={{ opacity: 0, y: 10 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.4 }}
-            >
+            </CardTitle>
+            <CardDescription className="text-muted-foreground text-lg transition-opacity duration-500 delay-200">
               We are a boutique consulting firm helping companies turn ideas into
               scalable, secure, and future-proof solutions.
-            </motion.CardDescription>
+            </CardDescription>
           </CardHeader>
           <CardContent>
             <Link href="/#ai-consultation">
-              <motion.div
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 0.5, delay: 0.6 }}
-              >
-                <Button size="lg">Get Started</Button>
-              </motion.div>
+              <Button size="lg">Get Started</Button>
             </Link>
           </CardContent>
-        </motion.Card>
+        </Card>
       </div>
     </section>
   );
