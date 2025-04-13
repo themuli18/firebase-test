@@ -50,6 +50,15 @@ body {
     --rmbg-light-gray: 0 0% 94.1%;
     --rmbg-teal: 180 100% 25.1%;
 
+    --rmbg-background: hsl(var(--rmbg-light-gray));
+    --rmbg-foreground: hsl(var(--rmbg-deep-blue));
+    --rmbg-primary: hsl(var(--rmbg-deep-blue));
+    --rmbg-primary-foreground: hsl(var(--rmbg-light-gray));
+    --rmbg-secondary: hsl(var(--rmbg-light-gray));
+    --rmbg-secondary-foreground: hsl(var(--rmbg-deep-blue));
+    --rmbg-accent: hsl(var(--rmbg-teal));
+    --rmbg-accent-foreground: hsl(var(--rmbg-light-gray));
+
     --background: hsl(var(--rmbg-light-gray));
     --foreground: hsl(var(--rmbg-deep-blue));
     --primary: hsl(var(--rmbg-deep-blue));
@@ -58,6 +67,7 @@ body {
     --secondary-foreground: hsl(var(--rmbg-deep-blue));
     --accent: hsl(var(--rmbg-teal));
     --accent-foreground: hsl(var(--rmbg-light-gray));
+
   }
 
   .dark {
@@ -99,5 +109,3 @@ body {
     @apply bg-background text-foreground;
   }
 }
-
-

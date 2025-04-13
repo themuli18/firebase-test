@@ -8,16 +8,16 @@ const NavigationBar = () => {
           RMBG Digital Consulting
         </Link>
         <div className="space-x-6">
-          <Link href="#about" className="hover:text-accent">
+          <Link href="/#about" className="hover:text-accent">
             About
           </Link>
-          <Link href="#expertise" className="hover:text-accent">
+          <Link href="/#expertise" className="hover:text-accent">
             Expertise
           </Link>
-          <Link href="#consultation" className="hover:text-accent">
+          <Link href="/#consultation" className="hover:text-accent">
             Get Started
           </Link>
-          <Link href="#contact" className="hover:text-accent">
+          <Link href="/#contact" className="hover:text-accent">
             Contact Us
           </Link>
         </div>
@@ -27,4 +27,3 @@ const NavigationBar = () => {
 };
 
 export { NavigationBar };
-
